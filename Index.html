@@ -1,39 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College Website</title>
+    <title>Rohan's College</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: #0055a4;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .header b {
+            background: #fff;
+            color: red;
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        .header marquee {
+            font-size: 20px;
+            color: #ffffff;
+        }
+
+        .logo {
+            height: 65px;
+            display: block;
+            margin: 10px auto;
+        }
+
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #0055a4;
+        }
+
+        .slider img {
+            width: 100%;
+            height: auto;
+        }
+
+        .main-section {
+            margin-top: 20px;
+        }
+
+        .main-section .subhead {
+            color: #4CAF50;
+            text-align: center;
+        }
+
+        .main-section .heading {
+            color: white;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .testimonial {
+            width: 30%;
+            float: left;
+            margin-right: 3.33%;
+            background: #1f1f1f;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .testimonial:last-child {
+            margin-right: 0;
+        }
+
+        .testimonial:hover {
+            transform: translateY(-10px);
+        }
+
+        .testimonial-text {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            color: #b0b0b0;
+        }
+
+        .testimonial-detail {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .testimonial-img img {
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+        }
+
+        .testimonial-name {
+            margin-left: 10px;
+            text-align: left;
+        }
+
+        .testimonial-name h5 {
+            font-size: 18px;
+            color: white;
+        }
+
+        .testimonial-name img {
+            width: 80px;
+            margin-top: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .testimonial {
+                width: 45%;
+                margin-right: 5%;
+            }
+
+            .testimonial:last-child {
+                margin-right: 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .testimonial {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
 </head>
-<body style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
 
-    <!-- Header Section -->
-    <header style="background-color: #4CAF50; color: white; text-align: center; padding: 10px;">
-        <h1>Welcome to MITCORER</h1>
-        <h2>By Rohan...</h2>
-    </header>
-
-    <!-- Navigation Menu -->
-    <nav style="background-color: #333; overflow: hidden;">
-        <a href="#" style="float: left; display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;">Home</a>
-        <a href="#" style="float: left; display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;">About</a>
-        <a href="#" style="float: left; display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;">Courses</a>
-        <a href="#" style="float: left; display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;">Contact</a>
-    </nav>
-
-    <!-- Main Content -->
-    <div style="padding: 20px;">
-        <h2 style="color: #4CAF50;">About Us</h2>
-        <p style="color: #555;">Our college offers a variety of programs to cater to the diverse needs of our students. We pride ourselves on providing top-quality education and fostering a learning environment that encourages personal and professional growth.</p>
-
-        <h2 style="color: #4CAF50;">Courses</h2>
-        <p style="color: #555;">We offer a wide range of courses in various fields including Science, Arts, Commerce, and Technology. Our experienced faculty members are dedicated to helping students achieve their academic goals.</p>
+<body>
+    <div class="header">
+        <div class="container">
+            <b> NEWS : </b>
+            <marquee> MIT College: This web page is made by Rohan... </marquee>
+        </div>
+        <div class="container">
+            <img src="images/logo.png" class="logo" alt="College Logo">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About us</a>
+                <a href="#">Events</a>
+                <a href="#">Gallery</a>
+                <a href="#">Notice Board</a>
+                <a href="#">Contact us</a>
+            </nav>
+        </div>
     </div>
 
-    <!-- Footer Section -->
-    <footer style="background-color: #333; color: white; text-align: center; padding: 10px; position: absolute; width: 100%; bottom: 0;">
+    <div class="slider">
+        <img src="images/slider.png" alt="Slider Image">
+    </div>
+
+    <div class="main-section">
+        <div class="container">
+            <h4 class="subhead">Testimonial</h4>
+            <h2 class="heading">What Parents Say About Our College</h2>
+            <div class="testimonial">
+                <div class="testimonial-text">
+                    <p><img src="images/quote.png" alt="Quote"></p>
+                    Contrary to popular belief, Lorem Ipsum is not simply. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard, a Latin professor at Hampden-Sydney College.
+                </div>
+                <div class="testimonial-detail">
+                    <div class="testimonial-img">
+                        <img src="images/testimonial-1.png" alt="Testimonial 1">
+                    </div>
+                    <div class="testimonial-name">
+                        <h5>Kiya</h5>
+                        <p><img src="images/rating.png" alt="Rating"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-text">
+                    <p><img src="images/quote.png" alt="Quote"></p>
+                    Contrary to popular belief, Lorem Ipsum is not simply. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard, a Latin professor at Hampden-Sydney College.
+                </div>
+                <div class="testimonial-detail">
+                    <div class="testimonial-img">
+                        <img src="images/testimonial-2.png" alt="Testimonial 2">
+                    </div>
+                    <div class="testimonial-name">
+                        <h5>Divya</h5>
+                        <p><img src="images/rating.png" alt="Rating"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-text">
+                    <p><img src="images/quote.png" alt="Quote"></p>
+                    Contrary to popular belief, Lorem Ipsum is not simply. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard, a Latin professor at Hampden-Sydney College.
+                </div>
+                <div class="testimonial-detail">
+                    <div class="testimonial-img">
+                        <img src="images/testimonial-3.png" alt="Testimonial 3">
+                    </div>
+                    <div class="testimonial-name">
+                        <h5>Richa</h5>
+                        <p><img src="images/rating.png" alt="Rating"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
         <p>&copy; 2024 Our College. All rights reserved.</p>
     </footer>
-
 </body>
+
 </html>
