@@ -55,6 +55,7 @@
             display: flex;
             justify-content: center;
             padding: 15px 0;
+            flex-wrap: wrap;
         }
 
         nav a {
@@ -98,6 +99,7 @@
             border-radius: 10px;
             text-align: center;
             transition: transform 0.3s;
+            margin-bottom: 20px;
         }
 
         .testimonial:last-child {
@@ -159,13 +161,34 @@
             .testimonial:last-child {
                 margin-right: 0;
             }
+
+            nav a {
+                padding: 8px 10px;
+                font-size: 16px;
+            }
         }
 
         @media (max-width: 480px) {
             .testimonial {
                 width: 100%;
                 margin-right: 0;
-                margin-bottom: 20px;
+            }
+
+            .slider img {
+                height: auto;
+            }
+
+            .testimonial-name h5 {
+                font-size: 16px;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                padding: 10px;
+                font-size: 16px;
             }
         }
     </style>
@@ -199,46 +222,40 @@
             <h2 class="heading">What Parents Say About Our College</h2>
             <div class="testimonial">
                 <div class="testimonial-text">
-                    <p><img src="images/quote.png" alt="Quote"></p>
+                    <p><img src="images/download.png" alt="Quote"></p>
                     Contrary to popular belief, Lorem Ipsum is not simply. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard, a Latin professor at Hampden-Sydney College.
                 </div>
                 <div class="testimonial-detail">
                     <div class="testimonial-img">
-                        <img src="images/testimonial-1.png" alt="Testimonial 1">
                     </div>
                     <div class="testimonial-name">
                         <h5>Kiya</h5>
-                        <p><img src="images/rating.png" alt="Rating"></p>
                     </div>
                 </div>
             </div>
             <div class="testimonial">
                 <div class="testimonial-text">
-                    <p><img src="images/quote.png" alt="Quote"></p>
+                    <p><img src="images/download.png" alt="Quote"></p>
                     Contrary to popular belief, Lorem Ipsum is not simply. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard, a Latin professor at Hampden-Sydney College.
                 </div>
                 <div class="testimonial-detail">
                     <div class="testimonial-img">
-                        <img src="images/testimonial-2.png" alt="Testimonial 2">
                     </div>
                     <div class="testimonial-name">
                         <h5>Divya</h5>
-                        <p><img src="images/rating.png" alt="Rating"></p>
                     </div>
                 </div>
             </div>
             <div class="testimonial">
                 <div class="testimonial-text">
-                    <p><img src="images/quote.png" alt="Quote"></p>
+                    <p><img src="images/download.png" alt="Quote"></p>
                     Contrary to popular belief, Lorem Ipsum is not simply. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard, a Latin professor at Hampden-Sydney College.
                 </div>
                 <div class="testimonial-detail">
                     <div class="testimonial-img">
-                        <img src="images/testimonial-3.png" alt="Testimonial 3">
                     </div>
                     <div class="testimonial-name">
                         <h5>Richa</h5>
-                        <p><img src="images/rating.png" alt="Rating"></p>
                     </div>
                 </div>
             </div>
